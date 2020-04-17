@@ -1,0 +1,3 @@
+1.select c.id,c.city,c.province from city c left join province p on c.province_id = p.id
+2.select p.id,p.province,count(c.city)over(group by p.id) from city c left join province p on c.province_id = p.id 
+3.select p.id,p.province,count(c.city)over()  countcity from city c left join province p on c.province_id = p.id group by p.id,p.province having countcity<15      return time;     } }
