@@ -1,0 +1,1 @@
+function str($str){ $new_str=strrev($str); $new_str= chunk_split($new_str,3,','); return strrev(rtrim($new_str,','));  }
